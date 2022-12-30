@@ -293,31 +293,7 @@ img {
     margin-top: 0;
 }
 
-.team-card-m {
-    background: var(--light-color);
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    border-radius: 0px 0px 4px 4px;
-    max-width: 264px;
-    text-align: center;
-}
-
-.team-card-t {
-    background: var(--light-color);
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    border-radius: 0px 0px 4px 4px;
-    max-width: 264px;
-    text-align: center;
-}
-
-.team-card-c {
-    background: var(--light-color);
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    border-radius: 0px 0px 4px 4px;
-    max-width: 264px;
-    text-align: center;
-}
-
-.team-card-d {
+.team-card {
     background: var(--light-color);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
@@ -371,6 +347,11 @@ img {
     display: flex;
 }
 
+.team-soc-item:hover,
+.team-soc-item:focus {
+    background-color: #404BBF;
+}
+
 .team-soc-list li  {
     flex-basis: calc((100% - 3 * 24px) / 4);
 }
@@ -418,9 +399,8 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     width: 100px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
+    margin: 0;
+    margin-bottom: 16px;
 }
 
 .footer-soc-icon {
@@ -435,7 +415,12 @@ img {
     gap: 24px;
     align-items: center;
     justify-content: center;
-    width: 208px;
+}
+
+.footer-soc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer-soc-list li {
@@ -458,6 +443,20 @@ img {
 .footer-soc-link:hover,
 .footer-soc-link:focus {
     background-color: var(--green-color);
+}
+
+.footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.footer-items {
+    margin-right: 120px;
+}
+
+.footer-soc-items {
+    height: 112px;
 }
 
 /* _______ FILTER SECTION _______ */
