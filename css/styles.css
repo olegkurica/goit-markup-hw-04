@@ -228,7 +228,6 @@ img {
 
 .skill-icon-item {
     display: flex;
-    width: 264px;
     height: 112px;
     border-radius: 4px; 
     background-color: var(--cloud-color);
@@ -405,7 +404,7 @@ img {
     margin: 0;
     padding-left: 0;
     display: flex;
-    gap: 24px;
+    gap: 16px;
     align-items: center;
     justify-content: center;
 }
@@ -595,16 +594,21 @@ img {
 
 .marketing-card-text {
     padding: 32px 0 32px 16px;
-    border: 1px solid var(--cornflower-color);
+    border: 0.5px solid var(--cloud-color);
     border-top-width: 0px;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+    
 }
-
-
 
 .marketing-link {
     text-decoration: none;
     color: var(--main-color);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+    display: block;
+}
+
+.marketing-link:hover,
+.marketing-link:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .marketing-text {
@@ -625,21 +629,10 @@ img {
     color: var(--main-color);
 }
 
-.card {
-    
-}
-
-.card:hover,
-.card:focus {
-    border: 0.5px solid var(--cloud-color);
-    border-top-width: 0px; 
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);  
-}
-
 /* _______ CUSTOMERS SECTION _______ */
 
 .customers {
-    padding: 130px 0 120px 0;
+    padding: 120px 0 120px 0;
 }
 
 .customers-title {
